@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monopoly Tábla</title>
+    <style>
+      .board {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 2px;
+        max-width: 600px;
+        margin: auto;
+        background-color: red;
+      }
+
+      .corner {
+        background-color: red;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .space {
+        background-color: red;
+      }
+
+      .top,
+      .bottom {
+        grid-column: span 1;
+      }
+
+      .left,
+      .right {
+        grid-row: span 1;
+      }
+
+      /* Példa egyedi mezők stílusára */
+      .top-left,
+      .top-right,
+      .bottom-left,
+      .bottom-right {
+        background-image: url('corner-image.jpg');
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <div class="corner top-left">xxxx</div>
+      <div class="space top">xxx</div>
+      <!-- További mezők hozzáadása itt -->
+      <div class="corner top-right">xxx</div>
+      <div class="space right">xxx</div>
+      <!-- További mezők hozzáadása itt -->
+      <div class="corner bottom-right">xxx</div>
+      <div class="space bottom">xx</div>
+      <!-- További mezők hozzáadása itt -->
+      <div class="corner bottom-left">xxx</div>
+      <div class="space left">xxx</div>
+      <!-- További mezők hozzáadása itt -->
+    </div>
+  </body>
+</html>

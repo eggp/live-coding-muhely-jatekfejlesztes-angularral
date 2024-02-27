@@ -1,0 +1,7 @@
+@for (field of fields; track field) {
+  <app-field>
+    @for (player of field?.players; track player.id) {
+      <app-player [player]="player" />
+    }
+  </app-field>
+}
